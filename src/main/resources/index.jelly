@@ -1,0 +1,6 @@
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+  Display Scala JUnit test names as they would appear in the source.
+</div>

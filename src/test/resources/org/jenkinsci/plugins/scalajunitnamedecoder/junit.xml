@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0" errors="0" skipped="0" tests="4" name="AllTests">
+  <testcase classname="foo.bar.SomeTest" name="testWithNormalName" time="0.0"/>
+  <testcase classname="DefaultPackageTest" name="test$u0020from$u0020default$u0020package" time="0.0"/>
+  <testcase classname="foo.bar$u0020baz.PackageHasUnicodeTest" name="testName" time="0"/>
+  <testcase classname="foo.bar$u0020baz.Package$u0020And$u0020Class$u0020Has$u0020Unicode$u0020Test" name="test$u0020name" time="0"/>
+</testsuite>

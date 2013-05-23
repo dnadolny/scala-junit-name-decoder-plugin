@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.jenkins-ci.plugins</groupId>
+    <artifactId>plugin</artifactId>
+    <version>1.515</version>
+  </parent>
+
+  <artifactId>scala-junit-name-decoder</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>hpi</packaging>
+  <name>Scala JUnit Name Decoder</name>
+  <description>Display Scala-encoded names as they would appear in Scala source code when viewing JUnit test results</description>
+  <url>http://wiki.jenkins-ci.org/display/JENKINS/Scala+JUnit+Name+Decoder+Plugin</url>
+  
+  <licenses>
+    <license>
+      <name>MIT license</name>
+      <comments>All source code is under the MIT license, except ScalaNameDecoder.</comments>
+    </license>
+    <license>
+      <name>Scala license</name>
+      <url>http://www.scala-lang.org/node/146</url>
+      <comments>ScalaNameDecoder is under the Scala license</comments>
+    </license>
+  </licenses>
+  
+  <developers>
+    <developer>
+      <id>dnadolny</id>
+      <name>Donny Nadolny</name>
+      <email>donny.nadolny@garnercorp.com</email>
+    </developer>
+  </developers>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <scm>
+    <connection>scm:git:git://github.com/jenkinsci/scala-junit-name-decoder-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/scala-junit-name-decoder-plugin.git</developerConnection>
+    <url>https://github.com/jenkinsci/scala-junit-name-decoder-plugin</url>
+  </scm>
+
+  <repositories>
+    <repository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
+</project>
